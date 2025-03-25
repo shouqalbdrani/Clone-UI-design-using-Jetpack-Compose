@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تصميم واجهة المستخدم باستخدام كومبوز</string>
+    <string name="nemerous_courses">دورات تدريبية تجريبية مجانية عديدة</string>
+    <string name="free_course">دورات مجانية لك لتجد طريقك للتعلم</string>
+    <string name="next_button">التالي</string>
+
+    <string name="quick_learning">تعلم سريع وسهل</string>
+    <string name="easy_learning_description">تعلم سهل وسريع في أي وقت لمساعدتك على تحسين مهاراتك المختلفة</string>
+
+    <string name="create_study_plan">قم بإنشاء خطة دراستك الخاصة</string>
+    <string name="study_plan_description">ادرس وفقًا لخطة الدراسة، واجعل الدراسة أكثر تحفيزًا</string>
+    <string name="signup_button">تسجيل</string>
+    <string name="login_button">تسجيل الدخول</string>
+
+    <string name="sign_up">التسجيل</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="terms_conditions">بإنشاء حساب، فإنك توافق على الشروط والأحكام الخاصة بنا</string>
+    <string name="already_have_account">هل لديك حساب بالفعل؟</string>
+    <string name="login">تسجيل الدخول</string>
+
+    <string name="login_title">تسجيل الدخول</string>
+    <string name="email_label">البريد الالكتروني</string>
+    <string name="password_label">كلمة المرور</string>
+    <string name="forgot_password">نسيان كلمة المرور</string>
+    <string name="signup_prompt">ليس لديك حساب</string>
+
+
+
+
+</resources>

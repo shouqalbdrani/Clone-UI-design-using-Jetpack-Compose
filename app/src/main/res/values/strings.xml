@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">UIDesignUsingCompose</string>
+    <string name="nemerous_courses">Numerous free trial courses</string>
+    <string name="free_course">Free courses for you to find your way to learning</string>
+    <string name="next_button"> Next</string>
+
+
+    <string name="quick_learning">Quick and easy learning</string>
+    <string name="easy_learning_description">Easy and fast learning at any time to help you improve various skills</string>
+
+    <string name="create_study_plan">Create your own study plan</string>
+    <string name="study_plan_description">Study according to the study plan, make study more motivated</string>
+    <string name="signup_button">Sign up</string>
+    <string name="login_button">Log in</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="terms_conditions">By creating an account you have to agree with our terms and conditions</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="login">Login</string>
+
+    <string name="login_title">Log In</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="signup_prompt">Dont have an account?</string>
+
+
+
 </resources>

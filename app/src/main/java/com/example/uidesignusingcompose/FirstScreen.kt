@@ -10,6 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
@@ -40,14 +41,14 @@ fun FirstScreen(navController: NavController, modifier: Modifier = Modifier) {
         }
         Spacer(modifier = Modifier.height(16.dp))
         BigText(
-            text = " Numerous free trial courses",
+            text = stringResource(id = R.string.nemerous_courses),
             Color.White,
             24.sp,
             textAlign = TextAlign.Center
         )
     }
     SmallText(
-        text = "Free courses for you to find your way to learning",
+        text = stringResource(id = R.string.free_course),
         color = Color.White,
         fontSize = 16.sp, textAlign = TextAlign.Center
     )
@@ -58,7 +59,7 @@ fun FirstScreen(navController: NavController, modifier: Modifier = Modifier) {
         modifier = modifier.padding(top = 680.dp , start = 160.dp),
         onClick = { navController.navigate("second_screen") }
     ) {
-        Text("Next")
+        Text(stringResource(id=R.string.next_button))
 
 
     }

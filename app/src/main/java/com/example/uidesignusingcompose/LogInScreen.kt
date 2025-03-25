@@ -8,6 +8,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -35,7 +36,7 @@ fun LogInScreen(navController: NavController) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "Log In",
+                text = stringResource(id = R.string.login_title),
                 fontSize = 30.sp,
                 color = Color.White,
                 fontWeight = FontWeight.Bold,
@@ -48,7 +49,7 @@ fun LogInScreen(navController: NavController) {
             CustomTextField(
                 value = email,
                 onValueChange = { email = it },
-                label = "Email"
+                label = stringResource(id = R.string.email_label)
             )
 
             Spacer(modifier = Modifier.height(16.dp))
@@ -56,16 +57,16 @@ fun LogInScreen(navController: NavController) {
             CustomTextField(
                 value = password,
                 onValueChange = { password = it },
-                label = "Password"
+                label = stringResource(id = R.string.password_label)
             )
 
             Spacer(modifier = Modifier.height(16.dp))
 
             TextButton(onClick = {
-                println("Forgot password clicked!")
+              //  println(stringResource(id = R.string.forgot_password))
             }) {
                 Text(
-                    text = "Forgot password?",
+                    text = stringResource(id = R.string.forgot_password),
                     color = Color.White,
                     textDecoration = TextDecoration.Underline
                 )
@@ -75,7 +76,7 @@ fun LogInScreen(navController: NavController) {
 
             Button(
                 onClick = {
-                    println("Log In clicked!")
+                    //println(stringResource(id = R.string.login_button))
                 },
                 modifier = Modifier
                     .fillMaxWidth()
@@ -84,7 +85,7 @@ fun LogInScreen(navController: NavController) {
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF0000FF))
             ) {
                 Text(
-                    text = "Log In",
+                    text = stringResource(id = R.string.login_button),
                     color = Color.White,
                     fontWeight = FontWeight.Bold,
                     fontSize = 16.sp
@@ -100,12 +101,12 @@ fun LogInScreen(navController: NavController) {
                 horizontalArrangement = Arrangement.Center
             ) {
                 Text(
-                    text = "Don't have an account?",
+                    text = stringResource(id = R.string.signup_prompt),
                     color = Color.White
                 )
                 Spacer(modifier = Modifier.width(4.dp))
                 Text(
-                    text = "Sign Up",
+                    text = stringResource(id = R.string.signup_button),
                     color = Color.Blue,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.clickable {

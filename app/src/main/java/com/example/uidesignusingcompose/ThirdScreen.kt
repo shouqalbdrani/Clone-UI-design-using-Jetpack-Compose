@@ -9,6 +9,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
@@ -37,14 +38,14 @@ fun ThirdScreen(navController: NavController, modifier: Modifier = Modifier) {
             Spacer(modifier = Modifier.height(16.dp))
         }
         BigText(
-            text = "Create your own study plan",
+            text = stringResource(id = R.string.create_study_plan),
             Color.White,
             24.sp,
             TextAlign.Center
         )
     }
             SmallText(
-                text = "Study according to the study plan, make study more motivated",
+                text = stringResource(id = R.string.study_plan_description),
                 color = Color.White,
                 fontSize = 16.sp,
                 textAlign = TextAlign.Center
@@ -59,14 +60,14 @@ fun ThirdScreen(navController: NavController, modifier: Modifier = Modifier) {
             horizontalArrangement = Arrangement.SpaceBetween,
         ) {
             ButtonShape(
-                text = "Sign up",
+                text = stringResource(id = R.string.signup_button),
                 onClick = { navController.navigate("signup_screen") },
                 backgroundColor = Color(0xFF0000FF),
                 textColor = Color.White
             )
 
             ButtonShape(
-                text = "Log in",
+                text = stringResource(id = R.string.login_button),
                 onClick = { navController.navigate("login_screen") },
                 backgroundColor = Color(0xFF808080),
                 textColor = Color.White
