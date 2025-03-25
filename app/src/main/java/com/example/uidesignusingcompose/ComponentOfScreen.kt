@@ -1,8 +1,6 @@
 package com.example.uidesignusingcompose
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -22,12 +20,9 @@ import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
@@ -80,7 +75,6 @@ fun SmallText(
 
             )
     }
-
 
 @Composable
 fun ButtonShape(
@@ -145,8 +139,8 @@ fun SocialLoginButtons(modifier: Modifier = Modifier) {
     Row(
         modifier = modifier
             .fillMaxWidth()
-            .padding(bottom = 32.dp) // Ensure some padding from the bottom
-            .clickable { println("Social buttons clicked!") }, // Make entire row clickable
+            .padding(bottom = 32.dp)
+            .clickable { println("Social buttons clicked!") },
         horizontalArrangement = Arrangement.Center,
         verticalAlignment = Alignment.CenterVertically
     ) {

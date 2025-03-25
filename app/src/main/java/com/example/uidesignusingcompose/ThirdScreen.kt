@@ -10,12 +10,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 
 @Composable
-fun ThirdScreen() {
+fun ThirdScreen(navController: NavController, modifier: Modifier = Modifier) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -31,44 +31,46 @@ fun ThirdScreen() {
         ) {
             Image(
                 painter = painterResource(id = R.drawable.login3),
-                contentDescription = "First Screen Image",
-                contentScale = ContentScale.Crop,
+                contentDescription = "Third Screen Image",
                 modifier = Modifier.matchParentSize()
             )
+            Spacer(modifier = Modifier.height(16.dp))
         }
-        Spacer (modifier = Modifier.height(16.dp))
-        BigText(text = " Create your own study plan" ,
+        BigText(
+            text = "Create your own study plan",
             Color.White,
             24.sp,
-            textAlign = TextAlign.Center)
-    }
-    SmallText(
-        text = "Study according to the study plan, make study more motivated" ,
-        color = Color.White,
-        fontSize = 16.sp ,textAlign = TextAlign.Center
-    )
-    Spacer(modifier = Modifier.height(16.dp))
-    Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(top = 730.dp),
-        horizontalArrangement = Arrangement.SpaceEvenly,
-        verticalAlignment = Alignment.CenterVertically
-    ){
-        ButtonShape(
-            text = "Sign up",
-            onClick = {},
-            backgroundColor = Color(0xFF0000FF),
-            textColor = Color.White,
+            TextAlign.Center
         )
-        ButtonShape(
-            text = "Log in ",
-            onClick = {},
-            backgroundColor = Color(0xFF808080),
-            textColor = Color.White,
-        )
+    }
+            SmallText(
+                text = "Study according to the study plan, make study more motivated",
+                color = Color.White,
+                fontSize = 16.sp,
+                textAlign = TextAlign.Center
+            )
 
+        Spacer(modifier = Modifier.height(24.dp))
+
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 700.dp),
+            horizontalArrangement = Arrangement.SpaceBetween,
+        ) {
+            ButtonShape(
+                text = "Sign up",
+                onClick = { navController.navigate("signup_screen") },
+                backgroundColor = Color(0xFF0000FF),
+                textColor = Color.White
+            )
+
+            ButtonShape(
+                text = "Log in",
+                onClick = { navController.navigate("login_screen") },
+                backgroundColor = Color(0xFF808080),
+                textColor = Color.White
+            )
+        }
     }
 
-
-}

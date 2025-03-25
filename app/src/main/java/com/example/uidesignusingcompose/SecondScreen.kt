@@ -3,18 +3,20 @@ package com.example.uidesignusingcompose
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.material3.Button
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 
 @Composable
-fun SecondScreen() {
+fun SecondScreen(navController: NavController, modifier: Modifier = Modifier) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -28,23 +30,36 @@ fun SecondScreen() {
                 .fillMaxWidth()
                 .height(250.dp)
         ) {
+
             Image(
                 painter = painterResource(id = R.drawable.login2),
-                contentDescription = "First Screen Image",
-                contentScale = ContentScale.Crop,
+                contentDescription = "Second Screen Image",
                 modifier = Modifier.matchParentSize()
             )
+
         }
-        Spacer (modifier = Modifier.height(16.dp))
-        BigText(text = " Quick and easy learning" ,
+        Spacer(modifier = Modifier.height(16.dp))
+        BigText(
+            text = " Quick and easy learning",
             Color.White,
             24.sp,
-            textAlign = TextAlign.Center)
+            textAlign = TextAlign.Center
+        )
     }
     SmallText(
-        text = "Easy and fast learning at any time to help you improve various skills" ,
+        text = "Easy and fast learning at any time to help you improve various skills",
         color = Color.White,
-        fontSize = 16.sp ,textAlign = TextAlign.Center)
+        fontSize = 16.sp, textAlign = TextAlign.Center
+    )
+    Spacer(modifier = Modifier.height(24.dp))
 
 
+    Button(
+        modifier = modifier.padding(top = 680.dp , start = 160.dp),
+        onClick = { navController.navigate("third_screen") }
+    ) {
+        Text("Next")
+
+
+    }
 }

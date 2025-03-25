@@ -13,9 +13,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.text.TextStyle
+import androidx.navigation.NavController
 
 @Composable
-fun SignUpScreen() {
+fun SignUpScreen(navController: NavController) {
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var termsAccepted by remember { mutableStateOf(false) }
@@ -105,7 +106,8 @@ fun SignUpScreen() {
                 color = Color.Blue,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.clickable {
-                    println("Sign Up clicked!")
+                    navController.navigate("login_screen")
+
                 }
             )
 
