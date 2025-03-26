@@ -15,7 +15,9 @@ To run the app locally, follow these steps:
 git clone https://github.com/yourusername/compose-ui-clone.git
 - Open Android Studio
 - Navigate to MainActivity.kt
-- Ru the App
+- Run the App
 
 ## Screenshot:
+![Screenshot 2025-03-26 052653](https://github.com/user-attachments/assets/64c75ad1-deff-42ac-a88f-671bd2c899af)
 
+![Screenshot 2025-03-26 052708](https://github.com/user-attachments/assets/ee0d23e8-7eba-48e7-ada6-9af233766715)
